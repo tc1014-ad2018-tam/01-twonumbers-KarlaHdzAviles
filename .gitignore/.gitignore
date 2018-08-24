@@ -1,0 +1,41 @@
+
+  /* Este programa nos ayudara a calcular los resultados de suma, resta, multiplicación y división
+ *
+ * Autor: Karla Alexandra Hernandez Aviles
+ * Fecha: 22 de agosto 2018
+ * correo: A01411843@itesm.mx
+ *
+ */
+
+#include <stdio.h>
+
+int main(void) {
+ // Declaracion de Variables
+ int num1;
+ int num2;
+ int suma;
+ int resta;
+ int multiplicacion;
+ double division;
+
+ //Aqui pido al usuario los numeros para poder hacer las operaciones
+ printf("Bienvenido. Te ayudare a calcular la suma, resta, division y multiplicacion de dos números.");
+ printf("Dame el primer numero");
+ scanf("%i", &num1);
+ printf("Dame el segundo numero");
+ scanf("%i", &num2);
+ 
+ //Aqui calculo las operaciones
+ suma = num1 + num2;
+ resta = num1 - num2;
+ multiplicacion = num1 * num2;
+ division = num1 / num2;
+
+ //Aqui le muestro al usuario el resultado de sus operaciones
+ printf("el resultado de la suma es: %i\n", suma);
+ printf("el resultado de la resta es: %i\n", resta);
+ printf("el resultado de la multiplicacion es: %i\n", multiplicacion);
+ printf("el resultado de la division es: %lf\n", division);
+
+  return 0;
+}
